@@ -1,21 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Loading...</title>
-  <meta name="description" content="My landing page.">
-  <meta name="author" content="Yousef AlZahrani" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" media="screen" href="css/style.css">
+    <meta charset="utf-8">
+    <title>Loading...</title>
+    <meta name="description" content="My landing page.">
+    <meta name="author" content="Yousef AlZahrani" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" media="screen" href="css/style.css">
 </head>
+
 <body>
 
-<!-- particles.js container -->
-<div id="particles-js"></div>
+    <!-- particles.js container -->
+    <div id="app"></div>
+    <div id="particles-js"></div>
 
-<!-- scripts -->
-<script src="js/particles.js"></script>
-<script src="js/app.js"></script>
+    <!-- scripts -->
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script>
+        var app = document.getElementById('app');
 
-</body>
+        var typewriter = new Typewriter(app, {
+            loop: true,
+            delay: 75,
+        });
+
+        typewriter
+            .pauseFor(2500)
+            .typeString('Hello this is <strong style="color:crimson">Yousef</strong>...')
+            .pauseFor(600)
+            .deleteChars(3)
+            .typeString(' <br> and these are my projects.')
+            .deleteChars(9)
+            .typeString(' <strong style="background-color:purple;">creations!</strong>')
+            .pauseFor(1000)
+            .start();
+    </script>
+
 </html>

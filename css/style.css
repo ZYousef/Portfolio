@@ -108,7 +108,7 @@ h2 {
 }
 
 .work-section li>p {
-    display: inline-block;
+    display: contents;
     padding-left: 10px;
 }
 

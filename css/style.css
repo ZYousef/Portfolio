@@ -14,7 +14,7 @@ a {
 }
 
 p > a {
-    color: white;
+    color: black;
     transition: .5s ease all;
     text-decoration: none;
 }

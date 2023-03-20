@@ -10,6 +10,13 @@ body {
 a {
     color: white;
     transition: .5s ease all;
+    text-decoration: none;
+}
+
+p > a {
+    color: white;
+    transition: .5s ease all;
+    text-decoration: none;
 }
 
 a:hover {
@@ -34,8 +41,8 @@ a:hover {
 }
 
 #img-container {
-    width: 7rem;
-    height: 7rem;
+    width: 10rem;
+    height: 10rem;
     overflow: hidden;
     border-radius: 50%;
     margin: auto;
@@ -44,7 +51,6 @@ a:hover {
 
 #portrait {
     max-height: 100%;
-    margin: 2rem .5rem;
 }
 
 h2 {
